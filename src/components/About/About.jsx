@@ -6,14 +6,14 @@ export default function About() {
         {/* Lado Esquerdo: Título e Destaque */}
         <div>
           <h2 className="text-4xl font-bold mb-6 flex items-center gap-3">
-            <span className="w-12 h-1 bg-red-600 rounded-full"></span>
+            <div className="w-12 h-1 bg-red-600 rounded-full"></div>
             Sobre mim
           </h2>
           <h3 className="text-2xl font-semibold text-white mb-4">
             Transformando linhas de código em soluções de impacto.
           </h3>
           <p className="text-gray-400 text-lg leading-relaxed">
-            Meu nome é Anderson e sou um desenvolvedor apaixonado por construir o futuro da web. 
+           Sou um desenvolvedor apaixonado por construir o futuro da web. 
             Não apenas escrevo código; eu projeto experiências que facilitam a vida das pessoas.
           </p>
         </div>
