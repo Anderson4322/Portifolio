@@ -69,19 +69,19 @@ export default function Skills() {
           <div className="flex justify-center gap-6 flex-wrap">
             
             {/* Node.js */}
-            <div className="flex items-center cursor-pointer gap-3 bg-gray-900 border border-white/5 px-6 py-3 rounded-xl hover:border-red-500/50 transition-all">
+            <div className="flex items-center cursor-pointer gap-3 bg-gray-900 border border-white/5 px-6 py-3 rounded-xl hover:border-green-500/50 transition-all">
               <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node" className="w-6 h-6" />
               <p className="text-gray-300 font-medium text-sm">Node.js</p>
             </div>
 
             {/* Express */}
-            <div className="flex items-center cursor-pointer gap-3 bg-gray-900 border border-white/5 px-6 py-3 rounded-xl hover:border-red-500/50 transition-all">
+            <div className="flex items-center cursor-pointer gap-3 bg-gray-900 border border-white/5 px-6 py-3 rounded-xl hover:border-gray-500/50 transition-all">
               <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express" className="w-6 h-6" />
               <p className="text-gray-300 font-medium text-sm">Express</p>
             </div>
 
             {/* PostgreSQL */}
-            <div className="flex items-center cursor-pointer gap-3 bg-gray-900 border border-white/5 px-6 py-3 rounded-xl hover:border-red-500/50 transition-all">
+            <div className="flex items-center cursor-pointer gap-3 bg-gray-900 border border-white/5 px-6 py-3 rounded-xl hover:border-blue-600/50 transition-all">
               <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="Postgres" className="w-6 h-6" />
               <p className="text-gray-300 font-medium text-sm">PostgreSQL</p>
             </div>
