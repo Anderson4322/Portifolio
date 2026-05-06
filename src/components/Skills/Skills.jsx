@@ -20,19 +20,19 @@ export default function Skills() {
           <div className="flex justify-center gap-6 flex-wrap">
             
             {/* React */}
-            <div className="flex items-center cursor-pointer gap-3 bg-gray-900 border border-white/5 px-6 py-3 rounded-xl hover:border-red-500/50 transition-all">
+            <div className="flex items-center cursor-pointer gap-3 bg-gray-900 border border-white/5 px-6 py-3 rounded-xl hover:border-blue-500/50 transition-all">
               <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" className="w-6 h-6" />
               <p className="text-gray-300 font-medium text-sm">React</p>
             </div>
 
             {/* JavaScript */}
-            <div className="flex items-center cursor-pointer gap-3 bg-gray-900 border border-white/5 px-6 py-3 rounded-xl hover:border-red-500/50 transition-all">
+            <div className="flex items-center cursor-pointer gap-3 bg-gray-900 border border-white/5 px-6 py-3 rounded-xl hover:border-yellow-500/50 transition-all">
               <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JS" className="w-6 h-6" />
               <p className="text-gray-300 font-medium text-sm">JavaScript</p>
             </div>
 
             {/* Tailwind */}
-            <div className="flex items-center cursor-pointer gap-3 bg-gray-900 border border-white/5 px-6 py-3 rounded-xl hover:border-red-500/50 transition-all">
+            <div className="flex items-center cursor-pointer gap-3 bg-gray-900 border border-white/5 px-6 py-3 rounded-xl hover:border-blue-200/50 transition-all">
               <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind" className="w-6 h-6" />
               <p className="text-gray-300 font-medium text-sm">Tailwind</p>
             </div>
@@ -44,7 +44,7 @@ export default function Skills() {
             </div>
 
             {/* CSS */}
-            <div className="flex items-center cursor-pointer gap-3 bg-gray-900 border border-white/5 px-6 py-3 rounded-xl hover:border-red-500/50 transition-all">
+            <div className="flex items-center cursor-pointer gap-3 bg-gray-900 border border-white/5 px-6 py-3 rounded-xl hover:border-blue-600/50 transition-all">
               <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" className="w-6 h-6" />
               <p className="text-gray-300 font-medium text-sm">CSS</p>
             </div>
