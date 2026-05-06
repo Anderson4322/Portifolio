@@ -48,6 +48,15 @@ export default function Skills() {
               <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" className="w-6 h-6" />
               <p className="text-gray-300 font-medium text-sm">CSS</p>
             </div>
+              {/* BOOTSTRAP */}
+            <div className="flex items-center cursor-pointer gap-3 bg-gray-900 border border-white/5 px-6 py-3 rounded-xl hover:border-purple-500/50 transition-all">
+            <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+              alt="Bootstrap"
+              className="w-6 h-6"
+              />
+  <p className="text-gray-300 font-medium text-sm">Bootstrap</p>
+</div>
 
           </div>
         </div>
