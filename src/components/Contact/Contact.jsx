@@ -16,7 +16,7 @@ export default function Contact() {
       <div className="flex flex-col md:flex-row justify-center items-center gap-12 md:gap-20">
         
         <h1 className="text-xl font-medium text-gray-400 hover:text-red-500 hover:scale-110 transition-all duration-300 cursor-pointer">
-         <Link to="https://www.linkedin.com/in/anderson-ambrosio-6b8793281">LinkedIn</Link> 
+         <Link to="www.linkedin.com/in/anderson-ambrósio-6b8793281">LinkedIn</Link> 
         </h1>
 
         <h1 className="text-xl font-medium text-gray-400 hover:text-red-500 hover:scale-110 transition-all duration-300 cursor-pointer">
