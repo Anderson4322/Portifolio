@@ -7,42 +7,6 @@ import techcompany from "../../assets/logo.svg";
 import html from "../../assets/html.jpg";
 
 export default function Projects() {
-
-  const projects = [
-    {
-      image:
-        "https://static.vecteezy.com/ti/vetor-gratis/p1/7570850-backend-development-line-icone-vetor.jpg",
-      title: "Back-End Pessoal",
-      description:
-        "API REST com Node.js, Express e PostgreSQL, incluindo CRUD completo, organização em camadas e integração com banco de dados.",
-      link: "https://github.com/Anderson4322/Back-End-Pessoal",
-    },
-
-    {
-      image: html,
-      title: "HTMLs",
-      description:
-        "Coleção de interfaces responsivas utilizando HTML, CSS e boas práticas de layout moderno.",
-      link: "https://github.com/Anderson4322/Htmls",
-    },
-
-    {
-      image: react,
-      title: "React Native App",
-      description:
-        "Aplicação mobile desenvolvida com React Native, focada em integração com APIs e navegação entre telas.",
-      link: "https://github.com/Anderson4322/ReactNative",
-    },
-
-    {
-      image: techcompany,
-      title: "Tech Company",
-      description:
-        "Landing page moderna com React e Tailwind focada em design profissional, animações e experiência do usuário.",
-      link: "https://github.com/Anderson4322",
-    },
-  ];
-
   return (
     <section
       id="projects"
@@ -73,52 +37,137 @@ export default function Projects() {
       {/* GRID */}
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
 
-        {projects.map((project, index) => (
-          <motion.div
-            key={project.title}
-            initial={{ opacity: 0, y: 80 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{
-              delay: index * 0.15,
-              duration: 0.7,
-            }}
-            viewport={{ once: true }}
-            whileHover={{
-              y: -8,
-            }}
-            className="group bg-gray-900 p-6 rounded-2xl border border-transparent hover:border-red-600/50 transition-all duration-300 hover:shadow-[0_0_30px_rgba(220,38,38,0.15)]"
-          >
+        {/* Projeto 1 */}
+        <motion.div
+          initial={{ opacity: 0, y: 80 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7 }}
+          viewport={{ once: true }}
+          className="group bg-gray-900 p-6 rounded-2xl border border-transparent hover:border-red-600/50 transition-all duration-300"
+        >
 
-            {/* IMAGEM */}
-            <motion.div
-              whileHover={{ scale: 1.02 }}
-              className="rounded-xl mb-6 overflow-hidden"
+          <div className="rounded-xl mb-6">
+            <ImgCard src={'https://static.vecteezy.com/ti/vetor-gratis/p1/7570850-backend-development-line-icone-vetor.jpg'} />
+          </div>
+
+          <h3 className="text-xl font-bold text-white group-hover:text-red-500 transition-colors">
+            Back-End Pessoal
+          </h3>
+
+          <p className="text-gray-400 mt-3 text-sm leading-relaxed">
+            API REST com Node.js, Express e PostgreSQL, incluindo CRUD completo,
+            organização em camadas e integração com banco de dados.
+          </p>
+
+          <div className="mt-6 flex gap-4">
+            <Link
+              to="https://github.com/Anderson4322/Back-End-Pessoal"
+              className="text-red-400 font-semibold hover:text-red-300 hover:underline transition-colors"
             >
-              <ImgCard src={project.image} />
-            </motion.div>
+              Ver Projeto
+            </Link>
+          </div>
 
-            {/* TITULO */}
-            <h3 className="text-xl font-bold text-white group-hover:text-red-500 transition-colors">
-              {project.title}
-            </h3>
+        </motion.div>
 
-            {/* TEXTO */}
-            <p className="text-gray-400 mt-3 text-sm leading-relaxed">
-              {project.description}
-            </p>
+        {/* Projeto 2 */}
+        <motion.div
+          initial={{ opacity: 0, y: 80 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.2, duration: 0.7 }}
+          viewport={{ once: true }}
+          className="group bg-gray-900 p-6 rounded-2xl border border-transparent hover:border-red-600/50 transition-all duration-300"
+        >
 
-            {/* BOTÃO */}
-            <div className="mt-6 flex gap-4">
-              <Link
-                to={project.link}
-                className="text-red-400 font-semibold hover:text-red-300 hover:underline transition-colors"
-              >
-                Ver Projeto
-              </Link>
-            </div>
+          <div className="rounded-xl mb-6">
+            <ImgCard src={html} />
+          </div>
 
-          </motion.div>
-        ))}
+          <h3 className="text-xl font-bold text-white group-hover:text-red-500 transition-colors">
+            HTMLs
+          </h3>
+
+          <p className="text-gray-400 mt-3 text-sm leading-relaxed">
+            Coleção de interfaces responsivas utilizando HTML, CSS e boas
+            práticas de layout moderno.
+          </p>
+
+          <div className="mt-6 flex gap-4">
+            <Link
+              to="https://github.com/Anderson4322/Htmls"
+              className="text-red-400 font-semibold hover:text-red-300 hover:underline transition-colors"
+            >
+              Ver Projeto
+            </Link>
+          </div>
+
+        </motion.div>
+
+        {/* Projeto 3 */}
+        <motion.div
+          initial={{ opacity: 0, y: 80 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.4, duration: 0.7 }}
+          viewport={{ once: true }}
+          className="group bg-gray-900 p-6 rounded-2xl border border-transparent hover:border-red-600/50 transition-all duration-300"
+        >
+
+          <div className="rounded-xl mb-6">
+            <ImgCard src={react} />
+          </div>
+
+          <h3 className="text-xl font-bold text-white group-hover:text-red-500 transition-colors">
+            React Native App
+          </h3>
+
+          <p className="text-gray-400 mt-3 text-sm leading-relaxed">
+            Aplicação mobile desenvolvida com React Native, focada em integração
+            com APIs e navegação entre telas.
+          </p>
+
+          <div className="mt-6 flex gap-4">
+            <Link
+              to="https://github.com/Anderson4322/ReactNative"
+              className="text-red-400 font-semibold hover:text-red-300 hover:underline transition-colors"
+            >
+              Ver Projeto
+            </Link>
+          </div>
+
+        </motion.div>
+
+        {/* Projeto 4 */}
+        <motion.div
+          initial={{ opacity: 0, y: 80 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.6, duration: 0.7 }}
+          viewport={{ once: true }}
+          className="group bg-gray-900 p-6 rounded-2xl border border-transparent hover:border-red-600/50 transition-all duration-300"
+        >
+
+          <div className="rounded-xl mb-6">
+            <ImgCard src={techcompany} />
+          </div>
+
+          <h3 className="text-xl font-bold text-white group-hover:text-red-500 transition-colors">
+            Tech Company
+          </h3>
+
+          <p className="text-gray-400 mt-3 text-sm leading-relaxed">
+            Landing page moderna com React e Tailwind focada em design
+            profissional, animações e experiência do usuário.
+          </p>
+
+          <div className="mt-6 flex gap-4">
+            <Link
+              to="https://github.com/Anderson4322"
+              className="text-red-400 font-semibold hover:text-red-300 hover:underline transition-colors"
+            >
+              Ver Projeto
+            </Link>
+          </div>
+
+        </motion.div>
 
       </div>
     </section>
