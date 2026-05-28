@@ -160,7 +160,7 @@ export default function Projects() {
 
           <div className="mt-6 flex gap-4">
             <Link
-              to="https://github.com/Anderson4322"
+              to="https://github.com/Anderson4322/TechCompany"
               className="text-red-400 font-semibold hover:text-red-300 hover:underline transition-colors"
             >
               Ver Projeto
