@@ -61,7 +61,7 @@ export default function Contact() {
           viewport={{ once: true }}
           className="text-xl font-medium text-gray-400 hover:text-red-500 hover:scale-110 transition-all duration-300 cursor-pointer"
         >
-          <Link to="https://wa.me/1799179-594">
+          <Link to="https://wa.me/1799179594">
             Whatsapp
           </Link>
         </motion.h1>
