@@ -96,7 +96,7 @@ export default function Header() {
             download={"Curriculo anderson-ambrosio.pdf"}
               className="bg-transparent cursor-pointer border-2 border-white/30 px-8 py-4 rounded-xl font-bold hover:bg-white/10 transition-all duration-300 backdrop-blur-sm"
               >
-              Download CV
+                Curriculo
             </a>
           </motion.div>
         </motion.div>
