@@ -91,14 +91,13 @@ export default function Header() {
               Ver Projetos
             </a>
 
-            <h1
+            <a
+            href="/Curriculo anderson-ambrosio.pdf"
+            download={"Curriculo anderson-ambrosio.pdf"}
               className="bg-transparent cursor-pointer border-2 border-white/30 px-8 py-4 rounded-xl font-bold hover:bg-white/10 transition-all duration-300 backdrop-blur-sm"
-              onClick={() => {
-                alert("No momento não esta disponivel o curriculo para download");
-              }}
-            >
+              >
               Download CV
-            </h1>
+            </a>
           </motion.div>
         </motion.div>
 
