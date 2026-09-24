@@ -1,4 +1,8 @@
 import { motion } from "framer-motion";
+import typescript from "../../assets/typescript-logo.svg";
+import csharp from "../../assets/csharp-logo.svg";
+import Apirest from "../../assets/rest-api-logo.svg";
+import bcrypt from "../../assets/bcrypt-logo.svg";
 
 export default function Skills() {
   return (
@@ -53,17 +57,16 @@ export default function Skills() {
               <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" className="w-6 h-6" />
               <p className="text-gray-300 font-medium text-sm">React</p>
             </motion.div>
-
-            {/* JavaScript */}
+            {/* React Native */}
             <motion.div
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.2, duration: 0.5 }}
+              transition={{ delay: 0.1, duration: 0.5 }}
               viewport={{ once: true }}
-              className="flex items-center cursor-pointer gap-3 bg-gray-900 border border-white/5 px-6 py-3 rounded-xl hover:border-yellow-500/50 transition-all"
+              className="flex items-center cursor-pointer gap-3 bg-gray-900 border border-white/5 px-6 py-3 rounded-xl hover:border-blue-500/50 transition-all"
             >
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JS" className="w-6 h-6" />
-              <p className="text-gray-300 font-medium text-sm">JavaScript</p>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React native" className="w-6 h-6" />
+              <p className="text-gray-300 font-medium text-sm">React Native</p>
             </motion.div>
 
             {/* Tailwind */}
@@ -120,6 +123,61 @@ export default function Skills() {
 
           </div>
         </div>
+        {/* --- GRUPO: LINGUAGENS DE PROGRAMAÇÃO --- */}
+        <div>
+          <motion.h3
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.7 }}
+            viewport={{ once: true }}
+            className="mb-8 text-red-500 text-sm font-bold uppercase tracking-[0.3em]"
+          >
+           Linguagens de Programação
+          </motion.h3>
+        </div>
+          {/* --- GRUPO: FERRAMENTAS --- */}
+        <div className="mb-16">
+
+          <div className="flex justify-center cursor-pointer gap-6 flex-wrap">
+
+            {/* TypeScript */}
+            <motion.div
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.1, duration: 0.5 }}
+              viewport={{ once: true }}
+              className="flex items-center cursor-pointer gap-3 bg-gray-900 border border-white/5 px-6 py-3 rounded-xl hover:border-blue-500/50 transition-all"
+            >
+              <img src={typescript} alt="Git" className="w-6 h-6" />
+              <p className="text-gray-300 font-medium text-sm">TypeScript</p>
+            </motion.div>
+
+           {/* C# */}
+            <motion.div
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.3, duration: 0.5 }}
+              viewport={{ once: true }}
+              className="flex items-center cursor-pointer gap-3 bg-gray-900 border border-white/5 px-6 py-3 rounded-xl hover:border-purple-200/50 transition-all"
+            >
+              <img src={csharp} alt="TypeScript" className="w-6 h-6" />
+              <p className="text-gray-300 font-medium text-sm">C#</p>
+            </motion.div>
+
+            {/* JavaScript */}
+            <motion.div
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.2, duration: 0.5 }}
+              viewport={{ once: true }}
+              className="flex items-center cursor-pointer gap-3 bg-gray-900 border border-white/5 px-6 py-3 rounded-xl hover:border-yellow-500/50 transition-all"
+            >
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JS" className="w-6 h-6" />
+              <p className="text-gray-300 font-medium text-sm">JavaScript</p>
+            </motion.div>
+
+          </div>
+        </div>
 
         {/* --- GRUPO: BACKEND --- */}
         <div className="mb-16">
@@ -146,6 +204,17 @@ export default function Skills() {
             >
               <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node" className="w-6 h-6" />
               <p className="text-gray-300 font-medium text-sm">Node.js</p>
+            </motion.div>
+            {/* Api rest */}
+            <motion.div
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.1, duration: 0.5 }}
+              viewport={{ once: true }}
+              className="flex items-center cursor-pointer gap-3 bg-gray-900 border border-white/5 px-6 py-3 rounded-xl hover:border-green-300 transition-all"
+            >
+              <img src={Apirest} alt="Node" className="w-6 h-6" />
+              <p className="text-gray-300 font-medium text-sm">API REST</p>
             </motion.div>
 
             {/* Express */}
@@ -224,6 +293,17 @@ export default function Skills() {
             >
               <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg" alt="NPM" className="w-6 h-6" />
               <p className="text-gray-300 font-medium text-sm">NPM</p>
+            </motion.div>
+            {/* bcrypt */}
+            <motion.div
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.3, duration: 0.5 }}
+              viewport={{ once: true }}
+              className="flex items-center gap-3 bg-gray-900 border border-white/5 px-6 py-3 rounded-xl hover:border-orange-500/50 transition-all"
+            >
+              <img src={bcrypt} alt="NPM" className="w-6 h-6" />
+              <p className="text-gray-300 font-medium text-sm">Bcrypt</p>
             </motion.div>
 
           </div>
