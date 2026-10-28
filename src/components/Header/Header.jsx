@@ -52,7 +52,7 @@ export default function Header() {
             transition={{ delay: 0.7, duration: 0.8 }}
             className="text-lg md:text-xl mt-6 text-gray-300 max-w-2xl leading-relaxed"
           >
-            Desenvolvedor Full Stack especializado em{" "}
+            Desenvolvedor Front-End especializado em{" "}
             <span className="text-white font-semibold">React</span>.
             Construindo interfaces de alta performance e experiências digitais memoráveis.
           </motion.p>
