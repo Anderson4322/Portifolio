@@ -1,11 +1,11 @@
 import { motion } from "framer-motion";
 import ImgCard from "./imagemBACK";
-
+import { Link } from "react-router-dom";
 import react from "../../assets/react.svg";
 import techcompany from "../../assets/logo.svg";
-import Mecanica_logo from "../../assets/Mecanica_logo.jpg";
-import csharp_logo from "../../assets/csharpApi.png";
-import academia_logo from "../../assets/imageAcademia.jpg";
+import Mecanica_logo from "../../assets/mecanica_logo.jpg";
+import Csharp_logo from "../../assets/apiC.png";
+import Academia_logo from "../../assets/imageAcademia.jpg";
 export default function Projects() {
   return (
     <section
@@ -34,7 +34,7 @@ export default function Projects() {
 
       {/* GRID */}
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-        
+
         {/* Projeto 1 */}
         <motion.div
           initial={{ opacity: 0, y: 80 }}
@@ -44,7 +44,7 @@ export default function Projects() {
           className="group bg-gray-900 p-6 rounded-2xl border border-transparent hover:border-red-600/50 transition-all duration-300"
         >
           <div className="rounded-xl mb-6">
-            <ImgCard src={csharp_logo} />
+            <ImgCard src={Csharp_logo} />
           </div>
 
           <h3 className="text-xl font-bold text-white group-hover:text-red-500 transition-colors">
@@ -169,7 +169,7 @@ export default function Projects() {
           className="group bg-gray-900 p-6 rounded-2xl border border-transparent hover:border-red-600/50 transition-all duration-300"
         >
           <div className="rounded-xl mb-6">
-            <ImgCard src={academia_logo} />
+            <ImgCard src={Academia_logo} />
           </div>
           <h3 className="text-xl font-bold text-white group-hover:text-red-500 transition-colors">
             Projeto de Academia
