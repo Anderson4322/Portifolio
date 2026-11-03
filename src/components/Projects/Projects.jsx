@@ -4,7 +4,7 @@ import ImgCard from "./imagemBACK";
 import react from "../../assets/react.svg";
 import techcompany from "../../assets/logo.svg";
 import Mecanica_logo from "../../assets/Mecanica_logo.jpg";
-import csharp_logo from "../../assets/CsharpApi.png";
+import csharp_logo from "../../assets/csharpApi.png";
 import academia_logo from "../../assets/imageAcademia.JPG";
 export default function Projects() {
   return (
@@ -21,9 +21,7 @@ export default function Projects() {
         viewport={{ once: true }}
         className="text-center mb-16"
       >
-        <h2 className="text-4xl font-bold mb-4">
-          Projetos
-        </h2>
+        <h2 className="text-4xl font-bold mb-4">Projetos</h2>
 
         <motion.div
           initial={{ width: 0 }}
@@ -36,7 +34,7 @@ export default function Projects() {
 
       {/* GRID */}
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-
+        
         {/* Projeto 1 */}
         <motion.div
           initial={{ opacity: 0, y: 80 }}
@@ -45,17 +43,18 @@ export default function Projects() {
           viewport={{ once: true }}
           className="group bg-gray-900 p-6 rounded-2xl border border-transparent hover:border-red-600/50 transition-all duration-300"
         >
-
           <div className="rounded-xl mb-6">
             <ImgCard src={csharp_logo} />
           </div>
 
           <h3 className="text-xl font-bold text-white group-hover:text-red-500 transition-colors">
-            API em Csharp 
+            API em Csharp
           </h3>
 
           <p className="text-gray-400 mt-3 text-sm leading-relaxed">
-            Desenvolvimento de uma API RESTful em C# utilizando o framework ASP.NET Core e Entity Framework. A API fornece endpoints para operação GET e é projetada para ser escalável e segura.
+            Desenvolvimento de uma API RESTful em C# utilizando o framework
+            ASP.NET Core e Entity Framework. A API fornece endpoints para
+            operação GET e é projetada para ser escalável e segura.
           </p>
 
           <div className="mt-6 flex gap-4">
@@ -66,7 +65,6 @@ export default function Projects() {
               Ver Projeto
             </Link>
           </div>
-
         </motion.div>
 
         {/* Projeto 2 */}
@@ -77,7 +75,6 @@ export default function Projects() {
           viewport={{ once: true }}
           className="group bg-gray-900 p-6 rounded-2xl border border-transparent hover:border-red-600/50 transition-all duration-300"
         >
-
           <div className="rounded-xl mb-6">
             <ImgCard src={Mecanica_logo} />
           </div>
@@ -87,7 +84,9 @@ export default function Projects() {
           </h3>
 
           <p className="text-gray-400 mt-3 text-sm leading-relaxed">
-            Criação de um site de briefing para uma oficina mecânica, utilizando HTML, CSS e JavaScript para fornecer informações sobre serviços, equipe e contato.
+            Criação de um site de briefing para uma oficina mecânica, utilizando
+            HTML, CSS e JavaScript para fornecer informações sobre serviços,
+            equipe e contato.
           </p>
 
           <div className="mt-6 flex gap-4">
@@ -98,7 +97,6 @@ export default function Projects() {
               Ver Projeto
             </Link>
           </div>
-
         </motion.div>
 
         {/* Projeto 3 */}
@@ -109,7 +107,6 @@ export default function Projects() {
           viewport={{ once: true }}
           className="group bg-gray-900 p-6 rounded-2xl border border-transparent hover:border-red-600/50 transition-all duration-300"
         >
-
           <div className="rounded-xl mb-6">
             <ImgCard src={react} />
           </div>
@@ -131,7 +128,6 @@ export default function Projects() {
               Ver Projeto
             </Link>
           </div>
-
         </motion.div>
 
         {/* Projeto 4 */}
@@ -142,7 +138,6 @@ export default function Projects() {
           viewport={{ once: true }}
           className="group bg-gray-900 p-6 rounded-2xl border border-transparent hover:border-red-600/50 transition-all duration-300"
         >
-
           <div className="rounded-xl mb-6">
             <ImgCard src={techcompany} />
           </div>
@@ -159,13 +154,11 @@ export default function Projects() {
           <div className="mt-6 flex gap-4">
             <Link
               to="https://github.com/Anderson4322/TechCompany_React.js"
-              
               className="text-red-400 font-semibold hover:text-red-300 hover:underline transition-colors"
             >
               Ver Projeto
             </Link>
           </div>
-
         </motion.div>
 
         <motion.div
@@ -182,7 +175,9 @@ export default function Projects() {
             Projeto de Academia
           </h3>
           <p className="text-gray-400 mt-3 text-sm leading-relaxed">
-            Desenvolvimento de um sistema de gerenciamento para academias, incluindo funcionalidades como cadastro de alunos e agendamento de treinos.
+            Desenvolvimento de um sistema de gerenciamento para academias,
+            incluindo funcionalidades como cadastro de alunos e agendamento de
+            treinos.
           </p>
           <div className="mt-6 flex gap-4">
             <Link
@@ -192,8 +187,7 @@ export default function Projects() {
               Ver Projeto
             </Link>
           </div>
-          </motion.div>
-
+        </motion.div>
       </div>
     </section>
   );
