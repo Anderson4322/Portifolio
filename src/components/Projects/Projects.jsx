@@ -5,7 +5,7 @@ import react from "../../assets/react.svg";
 import techcompany from "../../assets/logo.svg";
 import Mecanica_logo from "../../assets/Mecanica_logo.jpg";
 import csharp_logo from "../../assets/csharpApi.png";
-import academia_logo from "../../assets/imageAcademia.JPG";
+import academia_logo from "../../assets/imageAcademia.jpg";
 export default function Projects() {
   return (
     <section
