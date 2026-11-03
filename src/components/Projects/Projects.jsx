@@ -4,8 +4,9 @@ import ImgCard from "./imagemBACK";
 
 import react from "../../assets/react.svg";
 import techcompany from "../../assets/logo.svg";
-import html from "../../assets/html.jpg";
-
+import Mecanica_logo from "../../assets/mecanica_logo.jpg";
+import csharp_logo from "../../assets/csharpApi.png";
+import academia_logo from "../../assets/imageAcademia.jpg";
 export default function Projects() {
   return (
     <section
@@ -47,16 +48,15 @@ export default function Projects() {
         >
 
           <div className="rounded-xl mb-6">
-            <ImgCard src={'https://static.vecteezy.com/ti/vetor-gratis/p1/7570850-backend-development-line-icone-vetor.jpg'} />
+            <ImgCard src={csharp_logo} />
           </div>
 
           <h3 className="text-xl font-bold text-white group-hover:text-red-500 transition-colors">
-            Back-End Pessoal
+            API em Csharp 
           </h3>
 
           <p className="text-gray-400 mt-3 text-sm leading-relaxed">
-            API REST com Node.js, Express e PostgreSQL, incluindo CRUD completo,
-            organização em camadas e integração com banco de dados.
+            Desenvolvimento de uma API RESTful em C# utilizando o framework ASP.NET Core e Entity Framework. A API fornece endpoints para operação GET e é projetada para ser escalável e segura.
           </p>
 
           <div className="mt-6 flex gap-4">
@@ -80,21 +80,20 @@ export default function Projects() {
         >
 
           <div className="rounded-xl mb-6">
-            <ImgCard src={html} />
+            <ImgCard src={Mecanica_logo} />
           </div>
 
           <h3 className="text-xl font-bold text-white group-hover:text-red-500 transition-colors">
-            HTMLs
+            Briefing de Mecanica
           </h3>
 
           <p className="text-gray-400 mt-3 text-sm leading-relaxed">
-            Coleção de interfaces responsivas utilizando HTML, CSS e boas
-            práticas de layout moderno.
+            Criação de um site de briefing para uma oficina mecânica, utilizando HTML, CSS e JavaScript para fornecer informações sobre serviços, equipe e contato.
           </p>
 
           <div className="mt-6 flex gap-4">
             <Link
-              to="https://github.com/Anderson4322/Htmls"
+              to="https://github.com/Anderson4322/Mecanica"
               className="text-red-400 font-semibold hover:text-red-300 hover:underline transition-colors"
             >
               Ver Projeto
@@ -169,6 +168,32 @@ export default function Projects() {
           </div>
 
         </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 80 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.8, duration: 0.7 }}
+          viewport={{ once: true }}
+          className="group bg-gray-900 p-6 rounded-2xl border border-transparent hover:border-red-600/50 transition-all duration-300"
+        >
+          <div className="rounded-xl mb-6">
+            <ImgCard src={academia_logo} />
+          </div>
+          <h3 className="text-xl font-bold text-white group-hover:text-red-500 transition-colors">
+            Projeto de Academia
+          </h3>
+          <p className="text-gray-400 mt-3 text-sm leading-relaxed">
+            Desenvolvimento de um sistema de gerenciamento para academias, incluindo funcionalidades como cadastro de alunos e agendamento de treinos.
+          </p>
+          <div className="mt-6 flex gap-4">
+            <Link
+              to="https://github.com/Anderson4322/dashboardAcademia"
+              className="text-red-400 font-semibold hover:text-red-300 hover:underline transition-colors"
+            >
+              Ver Projeto
+            </Link>
+          </div>
+          </motion.div>
 
       </div>
     </section>
