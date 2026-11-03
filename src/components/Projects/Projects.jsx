@@ -1,12 +1,11 @@
-import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import ImgCard from "./imagemBACK";
 
 import react from "../../assets/react.svg";
 import techcompany from "../../assets/logo.svg";
-import Mecanica_logo from "../../assets/mecanica_logo.jpg";
-import csharp_logo from "../../assets/csharpApi.png";
-import academia_logo from "../../assets/imageAcademia.jpg";
+import Mecanica_logo from "../../assets/Mecanica_logo.jpg";
+import csharp_logo from "../../assets/CsharpApi.png";
+import academia_logo from "../../assets/imageAcademia.JPG";
 export default function Projects() {
   return (
     <section
