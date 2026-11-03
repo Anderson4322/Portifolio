@@ -3,7 +3,7 @@ import ImgCard from "./imagemBACK";
 import { Link } from "react-router-dom";
 import react from "../../assets/react.svg";
 import techcompany from "../../assets/logo.svg";
-import Mecanica_logo from "../../assets/mecanica_logo.jpg";
+import Mecanica_logo from "../../assets/mecanicaLogo.jpg";
 import Csharp_logo from "../../assets/apiC.png";
 import Academia_logo from "../../assets/imageAcademia.jpg";
 export default function Projects() {
